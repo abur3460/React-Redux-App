@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.posterImage {
+  max-width: 75px;
+  padding-top: 5%;
+  padding-left: 3%;
+}
+
+.main {
+  font-family: "Orbitron", sans-serif;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.m-title {
+  font-family: "Orbitron", sans-serif;
+  margin-top: 2.5rem;
+  width: 100%;
+  text-align: center;
+  margin-left: 2.5rem;
+}
+
+.m-container {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@keyframes bouncy {
+  0% {
+    top: 0em;
+  }
+  40% {
+    top: 0em;
+  }
+  43% {
+    top: -0.9em;
+  }
+  46% {
+    top: 0em;
+  }
+  48% {
+    top: -0.4em;
+  }
+  50% {
+    top: 0em;
+  }
+  100% {
+    top: 0em;
+  }
+}
+
+.m-btn {
+  margin-left: 2.5rem;
+  animation: bouncy 2s infinite linear;
+  padding: 1rem;
+  border: 0.1em solid #ffffff;
+  border-radius: 0.12em;
+  text-decoration: none;
+  font-weight: 500;
+  color: #ffffff;
+  transition: transform 0.3s ease-in-out;
+}
+.m-btn:hover {
+  transform: scale(1.07);
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.cryptoContainer ul {
+  transition: 0.2s ease-in-out;
+}
+
+.cryptoContainer:hover ul {
+  filter: saturate(10);
+  opacity: 1;
+  transform: scale(1.04);
+}
+
+.cryptoContainer ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 600px));
+}
+
+.cryptoContainer ul li {
+  border-radius: 0.5rem;
+  list-style-type: none;
+}
+
+.cryptoContainer ul li figure {
+  overflow: hidden;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  position: relative;
+  padding-bottom: 8%;
+  box-shadow: 0 0 5px white;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.textNew {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
